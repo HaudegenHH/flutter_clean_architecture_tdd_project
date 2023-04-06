@@ -22,3 +22,16 @@ Add Item:
 ```sh 
 --no-sound-null-safety
 ```
+
+
+---
+
+code refactoring: 
+
+like in php you can make use of the call method, which is an inbuild fn and allows you to call the obj as if it were a method.
+therefore you can get rid of the execute and replace it with call
+
+next:
+
+wrote an abstract class (since dart doesnt support interfaces) that enforces the class "GetConcreteNumberTrivia" to have a call method (and not an execute method like before)
+and i put it into the core/usecases folder. it applies to all the usecases across all of the features thats y i put it into the core folder
